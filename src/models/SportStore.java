@@ -19,6 +19,7 @@ public class SportStore {
     }
 
     public void setAddress(String address) {
+        //remove the white spaces
         address = address.trim();
         if (address.length()>=5)
             this.address = address;
