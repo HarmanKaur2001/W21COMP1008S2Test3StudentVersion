@@ -12,7 +12,10 @@ public abstract class InventoryItem {
 
     public InventoryItem(double purchasePrice, double sellingPrice, int quantityInStock)
     {
-
+        setPurchasePrice(purchasePrice);
+        setQuantitySold(quantitySold);
+        setSellingPrice(sellingPrice);
+        setQuantityInStock(quantityInStock);
     }
 
     public int getQuantityInStock() {
@@ -20,6 +23,12 @@ public abstract class InventoryItem {
     }
 
     public void setQuantityInStock(int quantityInStock) {
+        if(quantityInStock>=0){
+            this.quantityInStock =quantityInStock;
+        }
+        else{
+            throw new IllegalArgumentException("set greater than 0");
+        }
     }
 
     public int getQuantitySold() {
