@@ -39,6 +39,6 @@ public class SportStore {
 
     public double calculateProfit()
     {
-
+        return -1;
     }
 }
