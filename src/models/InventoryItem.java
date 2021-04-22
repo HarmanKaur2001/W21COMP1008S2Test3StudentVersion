@@ -16,6 +16,7 @@ public abstract class InventoryItem {
         setQuantitySold(quantitySold);
         setSellingPrice(sellingPrice);
         setQuantityInStock(quantityInStock);
+
     }
 
     public int getQuantityInStock() {
@@ -77,7 +78,7 @@ public abstract class InventoryItem {
 
     public double getProfit()
     {
-        //Profit = (sellingPrice - purchasePrice)* quantitySold;
-        return -1;
+         double profit = (sellingPrice - purchasePrice)* quantitySold;
+        return profit;
     }
 }
