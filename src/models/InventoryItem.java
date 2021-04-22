@@ -12,6 +12,7 @@ public abstract class InventoryItem {
 
     public InventoryItem(double purchasePrice, double sellingPrice, int quantityInStock)
     {
+
     }
 
     public int getQuantityInStock() {

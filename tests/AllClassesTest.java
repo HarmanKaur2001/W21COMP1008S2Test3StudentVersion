@@ -21,17 +21,17 @@ class AllClassesTest {
         tennisRacquet2 = new TennisRacquet("Head","Ti S6",250,"midPlus",42.15,189.99,15);
         tennisRacquet3 = new TennisRacquet("Wilson","Blade 98S V7.0",310,"oversize",50.99,201.99,12);
 
-        skis1 = new Skis("Rossignol","Hero Elite ST",165,310,899.76,10);
-        skis2 = new Skis("Rossignol","Hero Elite ST",155,310,899.76,10);
-        skis3 = new Skis("Volkl","RaceTiger SC Yellow",160,389.99,1099.76,4);
-
-        inventory = new ArrayList<>();
-        inventory.add(tennisRacquet1);
-        inventory.add(tennisRacquet2);
-        inventory.add(tennisRacquet3);
-        //inventory.add(skis1);
-        //inventory.add(skis2);
-        //inventory.add(skis3);
+//        skis1 = new Skis("Rossignol","Hero Elite ST",165,310,899.76,10);
+//        skis2 = new Skis("Rossignol","Hero Elite ST",155,310,899.76,10);
+//        skis3 = new Skis("Volkl","RaceTiger SC Yellow",160,389.99,1099.76,4);
+//
+//        inventory = new ArrayList<>();
+//        inventory.add(tennisRacquet1);
+//        inventory.add(tennisRacquet2);
+//        inventory.add(tennisRacquet3);
+//        //inventory.add(skis1);
+//        //inventory.add(skis2);
+//        //inventory.add(skis3);
 
         store = new SportStore("123 Happy St", inventory);
     }
@@ -201,7 +201,7 @@ class AllClassesTest {
     @Test
     void setTRHeadSizeMidplusConstructor()
     {
-        assertEquals("midplus",tennisRacquet2.getHeadSize());
+        assertEquals("midPlus",tennisRacquet2.getHeadSize());
     }
 
     @Test
@@ -213,7 +213,7 @@ class AllClassesTest {
     @Test
     void setTRHeadSizeSuperOversize()
     {
-        tennisRacquet1.setHeadSize("SUPER oversize");
+        tennisRacquet1.setHeadSize("super oversize");
         assertEquals("super oversize",tennisRacquet1.getHeadSize());
     }
 
