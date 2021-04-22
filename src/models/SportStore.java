@@ -19,6 +19,12 @@ public class SportStore {
     }
 
     public void setAddress(String address) {
+        address = address.trim();
+        if (address.length()>=5)
+            this.address = address;
+        else
+            throw new IllegalArgumentException("address must be greater than 5");
+
     }
 
     public ArrayList<InventoryItem> getInventory() {
