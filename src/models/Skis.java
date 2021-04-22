@@ -64,3 +64,4 @@ public class Skis extends InventoryItem{
         }
     }
 }
+//end of skis
