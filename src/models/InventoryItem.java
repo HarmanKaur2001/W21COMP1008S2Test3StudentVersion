@@ -38,7 +38,7 @@ public abstract class InventoryItem {
 
     public void setQuantitySold(int quantitySold) {
         if(quantityInStock>= quantitySold){
-            this.quantitySold= quantitySold;
+            this.quantitySold+= quantitySold;
         }
         else{
             throw new IllegalArgumentException("make the value greater or equal to quantity sold");
