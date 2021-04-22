@@ -29,9 +29,9 @@ class AllClassesTest {
         inventory.add(tennisRacquet1);
         inventory.add(tennisRacquet2);
         inventory.add(tennisRacquet3);
-        inventory.add(skis1);
-        inventory.add(skis2);
-        inventory.add(skis3);
+        //inventory.add(skis1);
+        //inventory.add(skis2);
+        //inventory.add(skis3);
 
         store = new SportStore("123 Happy St", inventory);
     }
